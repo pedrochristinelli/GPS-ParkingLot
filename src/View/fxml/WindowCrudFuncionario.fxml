@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="590.0" prefWidth="1267.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.WindowCrudFuncionarioController">
+   <children>
+      <Pane prefHeight="53.0" prefWidth="1389.0" style="-fx-background-color: #e8ba4e;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="363.0" layoutY="3.0" prefHeight="47.0" prefWidth="542.0" text="Gerenciamento de Funcionário" textFill="#191612">
+               <font>
+                  <Font name="Arial Black" size="32.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <AnchorPane layoutX="1162.0" layoutY="53.0" prefHeight="33.0" prefWidth="43.0" />
+      <JFXButton fx:id="btnNoFunc" accessibleHelp="NOVO FUNCIONARIO" accessibleRoleDescription="NOVO FUNCIONARIO" accessibleText="NOVO FUNCIONARIO" layoutX="1036.0" layoutY="104.0" onAction="#telaNovoFuncionario" prefHeight="33.0" prefWidth="228.0" style="-fx-background-color: #191612;" text="Novo" textFill="WHITE" AnchorPane.rightAnchor="3.0">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tableFuncionario" layoutY="53.0" prefHeight="536.0" prefWidth="1035.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="232.0">
+        <columns>
+          <TableColumn fx:id="cpfColum" prefWidth="143.9999542236328" text="CPF" />
+          <TableColumn fx:id="nomeColum" prefWidth="152.00003051757812" text="NOME" />
+            <TableColumn fx:id="telefoneColum" prefWidth="200.0" text="TELEFONE" />
+            <TableColumn fx:id="enderecoColum" prefWidth="311.0" text="ENDEREÇO" />
+            <TableColumn fx:id="funcaoColum" prefWidth="225.0" text="FUNÇÃO" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="tfBuscaFuncionario" layoutX="1036.0" layoutY="53.0" prefHeight="33.0" prefWidth="228.0" promptText="Buscar Funcionário" AnchorPane.rightAnchor="3.0">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnEditFunc" accessibleHelp="NOVO FUNCIONARIO" accessibleRoleDescription="NOVO FUNCIONARIO" accessibleText="NOVO FUNCIONARIO" layoutX="1036.0" layoutY="149.0" onAction="#editaFuncionario" prefHeight="33.0" prefWidth="228.0" style="-fx-background-color: #191612;" text="Editar" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnRemFunc" accessibleHelp="NOVO FUNCIONARIO" accessibleRoleDescription="NOVO FUNCIONARIO" accessibleText="NOVO FUNCIONARIO" layoutX="1036.0" layoutY="193.0" onAction="#removeFuncionario" prefHeight="33.0" prefWidth="228.0" style="-fx-background-color: #191612;" text="Remover" textFill="WHITE" AnchorPane.rightAnchor="3.0">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
