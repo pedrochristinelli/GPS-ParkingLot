@@ -1,8 +1,9 @@
 package Controller;
 
+import View.loaders.WindowLogin;
 import com.jfoenix.controls.JFXButton;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.stage.Stage;
 
 
 public class WindowStartController {
@@ -10,6 +11,12 @@ public class WindowStartController {
     @FXML
     JFXButton btnEntrar;
 
-    public void login(ActionEvent actionEvent) {
+    public void login(javafx.event.ActionEvent actionEvent) {
+        WindowLogin w = new WindowLogin();
+        w.startModal();
+        Stage stage = (Stage) btnEntrar.getScene().getWindow();
+        stage.close();
     }
+
+
 }
